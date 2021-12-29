@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import Nested_Components from './concepts/Nested_Components';
 import Props from './concepts/Props';
+import Simple_List from './concepts/Simple_List';
+import Proper_List from './concepts/Proper_List';
 import './index.css';
 
 // JSX rules
@@ -45,6 +47,8 @@ function Greeting() {
       <h4 style={{letterSpacing:'5px'}}>Hello .... Everyone !</h4>
       <Nested_Components />
       <Props />
+      <Simple_List />
+      <Proper_List />
     </React.Fragment>
   );
  
