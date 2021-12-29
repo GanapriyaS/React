@@ -11,11 +11,14 @@ export default function Nested_Components() {
     )
 }
 
+const subtitle='Love Urself';
 const Love = () => {
+    const title='Love  ';
     return (
         <article className='love_img'>
-            <h2 style={{color:'red'}}>Love</h2>
+            <h2 style={{color:'red'}}>{title}{141+2}</h2>
             <Image />
+            <h4>{subtitle.toUpperCase()}</h4>
         </article>
     )
 };

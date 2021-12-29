@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import Nested_Components from './concepts/Nested_Components';
+import Props from './concepts/Props';
 import './index.css';
 
 // JSX rules
@@ -43,6 +44,7 @@ function Greeting() {
     <React.Fragment>
       <h4 style={{letterSpacing:'5px'}}>Hello .... Everyone !</h4>
       <Nested_Components />
+      <Props />
     </React.Fragment>
   );
  

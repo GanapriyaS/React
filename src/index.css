@@ -35,3 +35,8 @@ body {
 .love_img h2 {
   margin-bottom: 0.5rem;
 }
+
+.love_img h4 {
+  margin-top: 0.5rem;
+  letter-spacing: 5px;
+}
