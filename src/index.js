@@ -1,17 +1,52 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDom from 'react-dom';
+import Nested_Components from './concepts/Nested_Components';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+// JSX rules
+// return single element
+// div / section / article or fragment
+// use camelCase for html attribute
+// className instead of class
+// close every element
+// formatting
+
+
+
+// stateless functional component, always return JSX
+// function Greeting() {
+//   return <h4>This is GanapriyaS</h4>
+// }
+
+// const Greeting = () => {
+//   return React.createElement('h1',{},"Hello");
+// };
+
+// function Greeting() {
+//   return (
+//     <div>
+//       <h4>This is GanapriyaS</h4>
+//     </div>
+//   );
+ 
+// }
+
+// const Greeting = () => {
+//   return React.createElement('div',{},
+//   React.createElement('h1',{}, 'hello world')
+//   );
+// };
+
+function Greeting() {
+  return (
+    // <></>
+    <React.Fragment>
+      <h4 style={{letterSpacing:'5px'}}>Hello .... Everyone !</h4>
+      <Nested_Components />
+    </React.Fragment>
+  );
+ 
+}
+
+ReactDom.render(<Greeting />, document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
