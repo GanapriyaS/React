@@ -5,30 +5,26 @@ import img_love1 from '../static/img/love1.jpeg'
 
 const love =[ {
     id:1,
-    title: 'Love ',
+    title: 'Prem ',
     number: '831',
     img: img_love
 },
 {   
     id:2,
-    title: 'Pyaar ',
+    title: 'Isk ',
     number: '143',
     img: img_love1
 },
 ]
 
-export default function Proper_List() {
+export default function Spread_Operator() {
     return (
         <div className='love' >
             {
-                // love.map((lov)=> {
-                //     return (
-                //         <Love key={lov.id} love={lov}></Love>
-                //     );
-                // })
                 love.map((lov,index)=> {
                     return (
-                        <Love key={index} love={lov}></Love>
+                        // not passing love property as object but passing as separate properties, spread all properties out comming , no need of props.love in <Love /> as previos in properlist
+                        <Love key={index} {...lov}></Love>
                     );
                 })
             }
@@ -39,9 +35,9 @@ export default function Proper_List() {
 const subtitle='Love Urself';
 
 
-
+// const Love = ({img,title,number}) => {
 const Love = (props) => {
-     const {img,title,number} = props.love;
+     const {img,title,number} = props;
     return (
         <article className='love_img'>
             <h2 style={{color:'red'}}>{title}{number}</h2>
