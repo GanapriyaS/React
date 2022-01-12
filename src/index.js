@@ -4,7 +4,11 @@ import Nested_Components from './concepts/Nested_Components';
 import Props from './concepts/Props';
 import Simple_List from './concepts/Simple_List';
 import Proper_List from './concepts/Proper_List';
+import Event from './concepts/Event';
+import Export from './concepts/Import_and_Export/Export';
+import Import_Default from './concepts/Import_and_Export/Import_Default';
 import './index.css';
+import {greeting} from './concepts/Import_and_Export/Greeting';
 
 // JSX rules
 // return single element
@@ -44,11 +48,14 @@ function Greeting() {
   return (
     // <></>
     <React.Fragment>
-      <h4 style={{letterSpacing:'5px'}}>Hello .... Everyone !</h4>
+      <h4 style={{letterSpacing:'5px'}}>{greeting}</h4>
       <Nested_Components />
       <Props />
       <Simple_List />
       <Proper_List />
+      <Event />
+      <Export />
+      <Import_Default />
     </React.Fragment>
   );
  
