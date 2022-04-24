@@ -8,6 +8,7 @@
 
 ---
 
+- If index.js is in folder it is easy to import not need of that folder name
 - ReactDOM to render in HTML
 - React createElement
 

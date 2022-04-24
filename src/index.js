@@ -7,7 +7,8 @@ import './index.css';
 // import Effect from './advanced/2-useEffect/effect';
 // import Condition from './advanced/3-conditional-rendering/condition';
 // import Forms from './advanced/4-forms/forms';
-import Ref from './advanced/5-useRef/1-useRef-basics'
+// import Ref from './advanced/5-useRef/1-useRef-basics'
+import Reducer from './advanced/6-useReducer'
 // name of object should match exactly
 import {greeting} from './basics/Import_and_Export/Greeting';
 
@@ -52,7 +53,8 @@ function Greeting() {
       {/* <Effect /> */}
       {/* <Condition /> */}
       {/* <Forms /> */}
-      <Ref />
+      {/* <Ref /> */}
+      <Reducer />
      </div>
     </React.Fragment>
   );
