@@ -2,10 +2,11 @@ import React from 'react';  // no need of ./ as in node_modules as it is only de
 import ReactDom from 'react-dom';
 
 import './index.css';
-import Main from './concepts/Main'
+// import Main from './basics/Main';
+// import State from './advanced/1-useState/state'
+import Effect from './advanced/2-useEffect/effect'
 // name of object should match exactly
-import {greeting} from './concepts/Import_and_Export/Greeting';
-
+import {greeting} from './basics/Import_and_Export/Greeting';
 
 
 
@@ -39,10 +40,14 @@ function Greeting() {
   return (
     // <></>
     <React.Fragment>
+      <div className='container'>
+
       <h4 style={{letterSpacing:'5px'}}>{greeting}</h4>
 
-      <Main />
-     
+      {/* <Main /> */}
+      {/* <State /> */}
+      <Effect />
+     </div>
     </React.Fragment>
   );
  
