@@ -43,6 +43,8 @@ The useReducer hook is usually recommended when the state becomes complex, with 
 
 ## Prop Drilling
 
+- context API will overcome this defect
+
 ## useContext
 
 - Context API
@@ -58,6 +60,13 @@ The useReducer hook is usually recommended when the state becomes complex, with 
 - Default Values
 
 ## React Router
+
+!(react router)[https://reactrouter.com/web/guides/quick-start]
+
+```
+npm install react-router-dom
+
+```
 
 - Basics
 - Error and Switch Component

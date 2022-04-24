@@ -5,6 +5,7 @@
 - components - User Interfaces
 - Root component, Component Tree
 - Independence, Reusability, Speed (Virtual DOM - only changes updated not all)
+- React component names must start with an uppercase letter. React Hook names must start with the word "use"
 
 ---
 

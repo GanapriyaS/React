@@ -3,12 +3,18 @@ import ReactDom from 'react-dom';
 
 import './index.css';
 // import Main from './basics/Main';
-// import State from './advanced/1-useState/state'
-// import Effect from './advanced/2-useEffect/effect';
-// import Condition from './advanced/3-conditional-rendering/condition';
-// import Forms from './advanced/4-forms/forms';
+// import State from './advanced/1-useState'
+// import Effect from './advanced/2-useEffect';
+// import Condition from './advanced/3-conditional-rendering';
+// import Forms from './advanced/4-forms';
 // import Ref from './advanced/5-useRef/1-useRef-basics'
-import Reducer from './advanced/6-useReducer'
+// import Reducer from './advanced/6-useReducer';
+// import PropDrilling from './advanced/7-prop-drilling';
+// import ContextAPI from './advanced/8-useContext/1-context-api';
+// import CustomHooks from './advanced/9-custom-hooks';
+// import PropType from './advanced/10-prop-types';
+// import Routers from './advanced/11-react-router';
+import Memo from './advanced/12-memo-useMemo-useCallback';
 // name of object should match exactly
 import {greeting} from './basics/Import_and_Export/Greeting';
 
@@ -54,7 +60,13 @@ function Greeting() {
       {/* <Condition /> */}
       {/* <Forms /> */}
       {/* <Ref /> */}
-      <Reducer />
+      {/* <Reducer /> */}
+      {/* <PropDrilling /> */}
+      {/* <ContextAPI /> */}
+      {/* <CustomHooks /> */}
+      {/* <PropType /> */}
+      {/* <Routers /> */}
+      <Memo />
      </div>
     </React.Fragment>
   );
