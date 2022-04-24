@@ -28,7 +28,7 @@ If no need to use () in return then first div or tag near return and make as man
 - Props
 - Simple list
 - Proper list
-- Spread Operator
+- Spread Operator & key prop
 - Events
 - Import and Export
 

@@ -5,7 +5,8 @@ import './index.css';
 // import Main from './basics/Main';
 // import State from './advanced/1-useState/state'
 // import Effect from './advanced/2-useEffect/effect';
-import Condition from './advanced/3-conditional-rendering/condition'
+// import Condition from './advanced/3-conditional-rendering/condition';
+import Forms from './advanced/4-forms/forms'
 // name of object should match exactly
 import {greeting} from './basics/Import_and_Export/Greeting';
 
@@ -48,7 +49,8 @@ function Greeting() {
       {/* <Main /> */}
       {/* <State /> */}
       {/* <Effect /> */}
-      <Condition />
+      {/* <Condition /> */}
+      <Forms />
      </div>
     </React.Fragment>
   );

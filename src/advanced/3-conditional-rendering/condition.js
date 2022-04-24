@@ -4,7 +4,7 @@ import MultipleReturns from './1-multiple-returns';
 import ShortCircuit from './2-short-circuit';
 import ShowHide from './3-show-hide';
 
-const Effect = () => {
+const Condition = () => {
   return (
     <>
     <br></br>
@@ -22,4 +22,4 @@ const Effect = () => {
   )
 }
 
-export default Effect
+export default Condition
