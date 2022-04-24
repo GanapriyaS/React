@@ -4,7 +4,8 @@ import ReactDom from 'react-dom';
 import './index.css';
 // import Main from './basics/Main';
 // import State from './advanced/1-useState/state'
-import Effect from './advanced/2-useEffect/effect'
+// import Effect from './advanced/2-useEffect/effect';
+import Condition from './advanced/3-conditional-rendering/condition'
 // name of object should match exactly
 import {greeting} from './basics/Import_and_Export/Greeting';
 
@@ -46,7 +47,8 @@ function Greeting() {
 
       {/* <Main /> */}
       {/* <State /> */}
-      <Effect />
+      {/* <Effect /> */}
+      <Condition />
      </div>
     </React.Fragment>
   );
