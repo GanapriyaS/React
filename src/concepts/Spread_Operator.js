@@ -1,21 +1,7 @@
 import React from 'react'
-import img_love from '../static/img/love.jpeg'
-import img_love1 from '../static/img/love1.jpeg'
 
+import {love} from './Import_and_Export/Love'
 
-const love =[ {
-    id:1,
-    title: 'Prem ',
-    number: '831',
-    img: img_love
-},
-{   
-    id:2,
-    title: 'Isk ',
-    number: '143',
-    img: img_love1
-},
-]
 
 export default function Spread_Operator() {
     return (
@@ -47,5 +33,5 @@ const Love = (props) => {
     )
 };
 const Image = (props) => (
-    <img src={props.img} />
+    <img src={props.img} alt=" "  width='100' height='100'/>
 );

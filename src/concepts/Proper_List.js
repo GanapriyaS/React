@@ -21,12 +21,14 @@ export default function Proper_List() {
     return (
         <div className='love' >
             {
+                // using index can change but id will not change
                 // love.map((lov)=> {
                 //     return (
                 //         <Love key={lov.id} love={lov}></Love>
                 //     );
                 // })
                 love.map((lov,index)=> {
+                    // const {img,title,number} = lov;
                     return (
                         <Love key={index} love={lov}></Love>
                     );
@@ -51,5 +53,5 @@ const Love = (props) => {
     )
 };
 const Image = (props) => (
-    <img src={props.img} />
+    <img src={props.img} alt=" "  width='100' height='100'/>
 );

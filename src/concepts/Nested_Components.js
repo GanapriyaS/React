@@ -23,5 +23,5 @@ const Love = () => {
     )
 };
 const Image = () => (
-    <img src={img_love} />
+    <img src={img_love} alt=""  width='100' height='100'/>
 );

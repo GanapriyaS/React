@@ -1,28 +1,19 @@
-import React from 'react';
+import React from 'react';  // no need of ./ as in node_modules as it is only dependency
 import ReactDom from 'react-dom';
-import Nested_Components from './concepts/Nested_Components';
-import Props from './concepts/Props';
-import Simple_List from './concepts/Simple_List';
-import Proper_List from './concepts/Proper_List';
-import Event from './concepts/Event';
-import Export from './concepts/Import_and_Export/Export';
-import Import_Default from './concepts/Import_and_Export/Import_Default';
+
 import './index.css';
+import Main from './concepts/Main'
+// name of object should match exactly
 import {greeting} from './concepts/Import_and_Export/Greeting';
 
-// JSX rules
-// return single element
-// div / section / article or fragment
-// use camelCase for html attribute
-// className instead of class
-// close every element
-// formatting
+
+
 
 
 
 // stateless functional component, always return JSX
 // function Greeting() {
-//   return <h4>This is GanapriyaS</h4>
+//   return <h4>This is My first component</h4>
 // }
 
 // const Greeting = () => {
@@ -49,13 +40,9 @@ function Greeting() {
     // <></>
     <React.Fragment>
       <h4 style={{letterSpacing:'5px'}}>{greeting}</h4>
-      <Nested_Components />
-      <Props />
-      <Simple_List />
-      <Proper_List />
-      <Event />
-      <Export />
-      <Import_Default />
+
+      <Main />
+     
     </React.Fragment>
   );
  

@@ -43,5 +43,5 @@ const Love = ({img,title,number,children}) => {
     )
 };
 const Image = (props) => (
-    <img src={props.img} />
+    <img src={props.img} alt=" "  width='100' height='100' />
 );
