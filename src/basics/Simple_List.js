@@ -15,6 +15,7 @@ const love =[ {
     number: '143',
     img: img_love1
 },
+
 ]
 
 export default function Simple_List() {

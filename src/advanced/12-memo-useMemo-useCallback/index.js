@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useMemo } from 'react'
 import { useFetch } from '../9-custom-hooks/useFetch'
-
+import Memo from './Memo';
+import Callback from './Callback';
 // The reduce() method executes a reducer function for array element.
 // The reduce() method returns a single value: the function's accumulated result.
 // The reduce() method does not execute the function for empty array elements.
@@ -31,7 +32,7 @@ const Index = () => {
   const addToCart = useCallback(() => {
     setCart(cart + 1)
   }, [cart])
-// React.memo looking for props , here calculatemostexpensive executes everytime click me used so usememo used only products change the usememo reruns 
+// React.memo looking for props , here calculatemostexpensive executes everytime click me used so usememo used only products change the usememo reruns and store data
   const mostExpensive = useMemo(() => calculateMostExpensive(products), [
     products,
   ])
@@ -44,6 +45,8 @@ const Index = () => {
       <h1 style={{ marginTop: '3rem' }}>cart : {cart}</h1>
       <h1>Most Expensive : ${mostExpensive}</h1>
       <BigList products={products} addToCart={addToCart} />
+      <Memo />
+      <Callback />
     </>
   )
 }
@@ -66,6 +69,8 @@ const BigList = React.memo(({ products, addToCart }) => {
           ></SingleProduct>
         )
       })}
+      
+   
     </section>
   )
 })
@@ -85,6 +90,8 @@ const SingleProduct = ({ fields, addToCart }) => {
       <p>${price}</p>
       <button onClick={addToCart}>add to cart</button>
     </article>
+
+    
   )
 }
 export default Index

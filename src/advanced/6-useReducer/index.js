@@ -1,6 +1,6 @@
 import React, { useState, useReducer } from 'react';
 import Modal from './Modal';
-
+import Example from './example';
 // reducer function
 import { reducer } from './reducer';
 const defaultState = {
@@ -53,6 +53,8 @@ const Index = () => {
           </div>
         );
       })}
+
+      <Example />
     </>
   );
 };

@@ -5,7 +5,7 @@ const ErrorExample = () => {
   const handleClick =()=>{
     // render not stays live
     title="Hello";
-    console.log("Hello");
+    console.log(title);
   }
   return (
     <React.Fragment>
